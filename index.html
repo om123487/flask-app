@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Phishing Detector</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            🛡️ AI Phishing Detector
+        </div>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#scanner">Scanner</a>
+            <a href="#about">About</a>
+            <a href="#tips">Security Tips</a>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                🔐 AI-Powered Cybersecurity
+            </div>
+
+            <h1>
+                Detect <span>Phishing Websites</span>
+                Before They Harm You
+            </h1>
+
+            <p>
+                Analyze suspicious URLs using an AI-based phishing
+                detection system and identify potential online threats.
+            </p>
+
+            <a href="#scanner" class="hero-button">
+                Start Scanning →
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Scanner -->
+    <section class="scanner-section" id="scanner">
+
+        <div class="section-heading">
+
+            <h2>🔎 Website Security Scanner</h2>
+
+            <p>
+                Enter a website URL below to analyze its security risk.
+            </p>
+
+        </div>
+
+
+        <div class="scanner-card">
+
+            <label for="urlInput">
+                Website URL
+            </label>
+
+            <div class="input-area">
+
+                <input
+                    type="url"
+                    id="urlInput"
+                    placeholder="https://example.com"
+                >
+
+                <button onclick="scanURL()">
+                    Scan URL
+                </button>
+
+            </div>
+
+            <p class="scanner-info">
+                ⚠️ Do not enter passwords or sensitive information.
+            </p>
+
+        </div>
+
+
+        <!-- Result -->
+        <div class="result-card" id="resultCard">
+
+            <div id="resultIcon">🔍</div>
+
+            <h3 id="resultTitle">
+                Waiting for Scan
+            </h3>
+
+            <p id="resultMessage">
+                Enter a URL above to begin the security analysis.
+            </p>
+
+            <div class="risk-container">
+
+                <div class="risk-label">
+                    <span>Risk Score</span>
+                    <span id="riskScore">0%</span>
+                </div>
+
+                <div class="risk-bar">
+                    <div id="riskProgress"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Statistics -->
+    <section class="statistics">
+
+        <div class="stat-card">
+            <div class="stat-icon">🔗</div>
+            <h3>10,000+</h3>
+            <p>URLs Analyzed</p>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon">🛡️</div>
+            <h3>8,500+</h3>
+            <p>Safe Websites</p>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon">🚨</div>
+            <h3>1,500+</h3>
+            <p>Threats Detected</p>
+        </div>
+
+        <div class="stat-card">
+            <div class="stat-icon">🤖</div>
+            <h3>AI Powered</h3>
+            <p>Detection System</p>
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section class="about" id="about">
+
+        <div class="section-heading">
+
+            <h2>🧠 About the Project</h2>
+
+            <p>
+                AI-Based Phishing Website Detection is a cybersecurity
+                system designed to identify potentially malicious websites.
+            </p>
+
+        </div>
+
+
+        <div class="features">
+
+            <div class="feature-card">
+                <div>🤖</div>
+                <h3>AI Analysis</h3>
+                <p>
+                    Uses machine learning techniques to analyze
+                    website and URL characteristics.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div>⚡</div>
+                <h3>Fast Detection</h3>
+                <p>
+                    Quickly analyzes submitted URLs and provides
+                    an easy-to-understand risk result.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div>🔐</div>
+                <h3>Security Focused</h3>
+                <p>
+                    Helps users identify suspicious websites and
+                    improve their online security awareness.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Security Tips -->
+    <section class="tips" id="tips">
+
+        <div class="section-heading">
+
+            <h2>🛡️ Phishing Prevention Tips</h2>
+
+            <p>
+                Follow these basic security practices to stay safer online.
+            </p>
+
+        </div>
+
+
+        <div class="tips-container">
+
+            <div class="tip">
+                <span>01</span>
+                <div>
+                    <h3>Check the URL</h3>
+                    <p>
+                        Carefully inspect the website address before
+                        entering personal information.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="tip">
+                <span>02</span>
+                <div>
+                    <h3>Look for HTTPS</h3>
+                    <p>
+                        Check whether the website uses HTTPS, but remember
+                        that HTTPS alone does not guarantee a website is safe.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="tip">
+                <span>03</span>
+                <div>
+                    <h3>Avoid Suspicious Links</h3>
+                    <p>
+                        Don't blindly click links received through unknown
+                        emails, messages, or social media accounts.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="tip">
+                <span>04</span>
+                <div>
+                    <h3>Never Share Passwords</h3>
+                    <p>
+                        Never enter sensitive information on websites
+                        you do not trust.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-logo">
+            🛡️ AI Phishing Detector
+        </div>
+
+        <p>
+            AI-Based Phishing Website Detection System
+        </p>
+
+        <p class="copyright">
+            © 2026 Cybersecurity Project
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
